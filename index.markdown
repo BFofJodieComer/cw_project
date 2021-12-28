@@ -1,12 +1,9 @@
 ---
-title: Gallery index
+title: Home | Understanding Transgender Identity
 layout: index
 ---
+# Understanding Transgender Identity
 
-(% for exhibit in site.exhibits %)
-
-<img scr="{{ exhibit.image.url }}" width = 256>
-<p> {{ exhibits.title }} by {{ exhibits.creator }} </p>
-<p><a> href="{{ exhibit.licence.url }}"> {{ exhibits.licence }}</a></p>
-
-(% endfor %)
+Just let me try if the new repository works.
+Yeah, it works.
+Congratulations.

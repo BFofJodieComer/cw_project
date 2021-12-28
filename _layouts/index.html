@@ -4,15 +4,21 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="{{ site.baseurl }}/">Gallery index</a>
-            <a href="{{ site.baseurl }}/about">About Gallery</a>
-        </nav>
-    </div>
-    <div class="container">
-        {{ content }}
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/self">Self</a>
+                <a href="{{ site.baseurl }}/family">Family</a>
+                <a href="{{ site.baseurl }}/society">Society</a>
+            </nav>
+        </div>
+        <div class="container">
+            {{ content }}
+        </div>
     </div>
 </body>
+
