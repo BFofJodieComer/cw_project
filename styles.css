@@ -8,8 +8,40 @@ body {
     font-family: sans-serif;
 }
 
+#wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 p {
     font-family: sans-serif;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.news p {
+    text-align: center;
+}
+
+/* Header/Blog Title */
+.heading {
+    padding: 120px;
+    text-align: center;
+}
+
+.heading h1 {
+    color: #49274a;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 ul {
@@ -21,44 +53,73 @@ nav {
     font-size: larger;
 }
 
+/* unvisited link */
 a:link {
     color: black;
     float: left;
     display: block;
     text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
 }
 
+/* visited link */
 a:visited {
     color: black;
 }
 
+/* mouse over link */
 a:hover {
-    color: white;
+    color: #94618e;
+    background-color: rgba(111, 131, 90); /*pantone 3508up 墨绿色*/
 }
 
-#wrapper {
-    max-width: 1200px;
+a.ex1:hover {
+    background-color: inherit;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.subheading1 {
     margin: auto;
+    width: 50%;
+    padding: 40px;
+    margin-bottom: -20px;
 }
 
-#footer {
-    margin: auto;
-    text-align: center;
-}
+.subheading {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    margin-bottom: -20px;
+  }
 
-#footer p {
-    font-size: small;
-    align-self: center;
-}
 
-#gallery {
-    margin: 0 auto;
+.news_container {
     display: grid;
-    grid-gap: 10px;
-}
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+  }
+  
+  .news >div {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
 
-.grid_cell {
-    align-self: baseline;
+/* films grid */
+.films {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 @media (min-width: 600px) {
@@ -78,11 +139,6 @@ a:hover {
         grid-template-columns: repeat(4, 275px); 
     }
   }
-
-.gallery_thumb {
-    width: 250px;
-    object-fit: cover;
-}
 
 #exhibit {
     width: 300px;
