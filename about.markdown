@@ -6,3 +6,5 @@ permalink: /about/
 
 Gallery of photographs of birds and animals from wikipedia.
 
+Really?
+
