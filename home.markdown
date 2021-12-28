@@ -53,7 +53,7 @@ layout: index
 </div>
 
 <div class="films">
-    {% for name in collections.exhibits.name %}
-     <p>{{ name.name }}</p>
+    {% for item in collections.exhibits.name %}
+     <p>{{ name }}</p>
     {% endfor %} 
 </div>
