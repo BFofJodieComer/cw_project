@@ -18,7 +18,12 @@ h2 {
     margin-bottom: 30px;
 }
 
-.films{
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.defaultcontainer{
     margin: auto;
     width: 50%;
     padding: 40px;
@@ -39,7 +44,21 @@ p {
 }
 
 .news p {
+    text-align: left;
+}
+
+.subheading1 p {
     text-align: center;
+}
+
+#footer p {
+    font-size: small;
+    align-self: center;
+    text-align: center;
+}
+
+.defaultcontainer p{
+    line-height: 20px;
 }
 
 /* Header/Blog Title */
@@ -86,25 +105,18 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #94618e;
-    background-color: rgba(111, 131, 90); /*pantone 3508up 墨绿色*/
+    color: #F4DECB;
+    background-color: #94618e; 
 }
 
 a.ex1:hover {
     background-color: inherit;
 }
 
-.container::after {
+.paracontainer::after {
     content: "";
     clear: both;
     display: table;
-}
-
-.subheading1 {
-    margin: auto;
-    width: 50%;
-    padding: 40px;
-    margin-bottom: -20px;
 }
 
 .subheading {
@@ -114,8 +126,14 @@ a.ex1:hover {
     margin-bottom: -20px;
   }
 
+.subheading1 {
+    margin: auto;
+    width: 50%;
+    padding: 40px;
+    margin-bottom: -20px;
+}
 
-.news_container {
+.gridcontainer {
     display: grid;
     grid-column-gap: 50px;
     grid-template-columns: auto auto auto;
@@ -127,11 +145,35 @@ a.ex1:hover {
     text-align: center;
 }
 
-.films {
-    margin: auto;
+.defaultcontainer {
     width: 70%;
     padding: 40px;
-    margin-bottom: -20px;
+    margin-top: -8%;
+    margin-left: 17%;
+    margin-bottom: 200px;
+}
+
+#footer {
+    margin: auto;
+    text-align: center;
+}
+
+.search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    width: 80%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+    font-size: medium;
+    margin-left: 11%;
+    margin-top: -5%;
+}
+
+.search:hover, .search:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
 }
 
 @media (min-width: 600px) {
