@@ -51,9 +51,17 @@ layout: index
         <p>The Wachowski Sisters:  transgender directors of Matrix series</p>
     </div>
 </div>
+<br>
+<hr>
 
-<div class="films">
-    {% for item in collections.exhibits.name %}
-     <p>{{ name }}</p>
-    {% endfor %} 
+<div class="subheading1">
+    <h2> Recomended Films </h2>
+    <br>
+    <div class="films">
+    {% for film in site.data.director %}
+    <p>{{ film.name }}</p>
+    {% endfor %}
+    </div>
 </div>
+
+
