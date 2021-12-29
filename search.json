@@ -1,15 +1,18 @@
 ---
 ---
 [
-  {% for exhibit in site.exhibits %}
+  {% for film in site.data.films %}
     {
-
-      "title"    : "{{ exhibit.title }}",
-      "url"      : "{{ site.baseurl }}{{ exhibit.url }}",
-      "tags"     : "{{ exhibit.tags }}",
-      "licence"  : "{{ exhibit.licence }}",
-      "year"     : "{{ exhibit.date | date: "%Y" }}"
+      
+      "title"    : "{{ film.name }}",
+      "url"      : "{{ site.baseurl }}{{ film.homepage }}",
+      "licence"  : "{{ exhibits.licence }}",
+      "year"     : "{{ film.year | date: "%Y" }}"
 
     }{% unless forloop.last %},{% endunless %}
+    
   {% endfor %}
 ]
+
+We don't know how to include all the items mentioned in our website for users to seearch.
+We expect to link back to the webpage mentioned those items displayed in the results.

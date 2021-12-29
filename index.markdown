@@ -4,7 +4,8 @@ layout: index
 ---
 
 <div class="heading">
-    <h1> Understanding Transgender Identity </h1>
+    <h1> Understanding Transgender Identity</h1>
+    {% assign description = 'How to display the "desciption" content here in markdown using liquid?' %}
 </div>
 
 <hr>
@@ -70,8 +71,20 @@ layout: index
     {% for film in site.data.films %}
     <p><a href="{{ film.homepage }}">{{ film.name }}, {{ film.year }}</a></p>
     {% endfor %}
+    {{ test.description }}
 </div>  
 
+<div class="defaultcontainer">
+    {% assign content = site.exhibits.test %}
+    {{ content.description }}
+</div>   
+
+<div class="defaultcontainer">
+    {% assign exhibit = site.exhibits %}
+    {% for content in exhibit %}
+    <p>{{ content.description }}</p>
+    {% endfor %}
+</div> 
 
 
 

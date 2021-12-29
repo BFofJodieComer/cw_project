@@ -29,6 +29,7 @@ url: "understandingtransgender.netlify.app" # the base hostname & protocol for y
 plugins:
   - jekyll-feed
 
+
 collections:
   - exhibits
 
