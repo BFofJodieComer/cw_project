@@ -176,6 +176,27 @@ a.ex1:hover {
     background-color: white;
 }
 
+/* unvisited link */
+a.citation:link {
+    color: black;
+    text-decoration: none;
+    display: contents;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+/* visited link */
+a.citation:visited {
+    color: black;
+}
+
+/* mouse over link */
+a.citation:hover {
+    color: #F4DECB;
+    background-color: #94618e; 
+}
+
+
 @media (min-width: 600px) {
     #gallery { 
         grid-template-columns: repeat(2, 275px); 

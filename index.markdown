@@ -12,8 +12,11 @@ layout: index
 
 <div class="paracontainer">
     <div class="subheading">
-        <h2> What is Transgender?</h2>
-        <p>"Transgender is an umbrella term for people whose gender identity and/or gender expression differs from the sex they were assigned at birth" (Gay and Lesbian Alliance Against Defamation [GLAAD], 2007)." https://www.glaad.org/reference/transgender "Transgender individuals should be identified with the pronoun that correspond with the gender with which they identify. It is appropriate to respectfully ask their name and what pronoun they prefer that you use."</p>
+        {% assign exhibits = site.exhibits %}
+        {% for information in exhibits %}
+        <h2> {{ information.definition-title }}</h2>
+        {% endfor %}
+        <p>"Transgender is an umbrella term for people whose gender identity and/or gender expression differs from the sex they were assigned at birth <a class="citation" href="https://www.glaad.org/reference/transgender">(Gay and Lesbian Alliance Against Defamation [GLAAD], 2007)</a>.”  “Transgender individuals should be identified with the pronoun that correspond with the gender with which they identify. It is appropriate to respectfully ask their name and what pronoun they prefer that you use <a class="citation" href="https://books.google.com/books?hl=en&lr=&id=XS3XJL_RGIgC&oi=fnd&pg=PP1&dq=Altilio,+Terry%3B+Otis-Green,+Shirley+(2011).+Oxford+Textbook+of+Palliative+Social+Work.+Oxford+University+Press.+p.+380.&ots=ak946C8Tcx&sig=ZK8zOWrvE99ZOQB2ZUVTUdUf1MM">(Altilio and Otis-Green, 2011, p. 380)."</a></p>
     </div>
      <div class="subheading">
         <h2> Our Aim </h2>
@@ -26,7 +29,6 @@ layout: index
 <div class="subheading1">
     <h2> Latest News </h2>
 </div>
-<hr>
 <div class="gridcontainer">
     <div class="news">
         <a class="ex1" href="https://www.bbc.co.uk/news/uk-59667786?utm_campaign=later-linkinbio-bbcnews&utm_content=later-23140797&utm_medium=social&utm_source=linkin.bio">
@@ -72,19 +74,5 @@ layout: index
     <p><a href="{{ film.homepage }}">{{ film.name }}, {{ film.year }}</a></p>
     {% endfor %}
     {{ test.description }}
-</div>  
-
-<div class="defaultcontainer">
-    {% assign content = site.exhibits.test %}
-    {{ content.description }}
-</div>   
-
-<div class="defaultcontainer">
-    {% assign exhibit = site.exhibits %}
-    {% for content in exhibit %}
-    <p>{{ content.description }}</p>
-    {% endfor %}
-</div> 
-
-
+</div>
 
