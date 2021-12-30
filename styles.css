@@ -15,12 +15,24 @@ body {
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
+    line-height: 40px;
+}
+
+.subheading2 h2{
+    text-align: justify;
+    margin-bottom: 5%;
 }
 
 h3 {
     font-size: 30px;
     text-align: center;
+    width: 100%;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: -8%;
 }
 
 .defaultcontainer{
@@ -32,7 +44,14 @@ h3 {
 
 .subheading1 {
     margin: auto;
-    width: 50%;
+    width: 60%;
+    padding: 40px;
+    margin-bottom: -20px;
+}
+
+.subheading2 {
+    margin: auto;
+    width: 60%;
     padding: 40px;
     margin-bottom: -20px;
 }
@@ -43,8 +62,13 @@ p {
     line-height: 25px;
 }
 
-.subheading1 p {
-    text-align: center;
+.subheading2 p{
+    text-align: justify;
+}
+
+.subheading1 p{
+    width: 150%;
+    margin-left: -27%;
 }
 
 #footer p {
@@ -53,7 +77,7 @@ p {
     text-align: center;
 }
 
-.grid-cell p {
+.news-cell p {
     text-align: center;
 }
 
@@ -120,6 +144,11 @@ a.citation:link {
 }
 
 /* mouse over link */
+a.citation:hover {
+    color: #94618e;
+}
+
+
 /* unvisited link */
 a.news-image:link {
     float: center;
@@ -152,18 +181,29 @@ a.news-image:hover {
     margin-bottom: -20px;
 }
 
-#gridcontainer {
+#news-container {
     width: 70%;
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-row: 1;
     grid-column-gap: 10px;
     padding: 10px;
     margin-left: 3%;
 }
 
-.grid-cell {
+.news-cell {
     background-color: #94617e;
 
+}
+
+#quote-container {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 40px;
+    padding: 20px;
+    margin-left: 15%;
 }
 
 .news-picture {
@@ -202,7 +242,11 @@ a.news-image:hover {
     background-color: white;
 }
 
-
+iframe {
+    width: 170%;
+    height: 70%;
+    margin-left: -35%;
+}
 
 @media (min-width: 600px) {
     #gallery { 

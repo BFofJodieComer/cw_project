@@ -5,7 +5,6 @@ layout: index
 
 <div class="heading">
     <h1> Understanding Transgender Identity</h1>
-    {% assign description = 'How to display the "desciption" content here in markdown using liquid?' %}
 </div>
 
 <hr>
@@ -27,11 +26,11 @@ layout: index
     <h2> Latest News </h2>
 </div>
 
-<div id = "gridcontainer">
+<div id = "news-container">
   {% assign sorted_news = site.exhibits %}
   {% for news in sorted_news %}
-    <div class = "grid-cell">
-      <a class="news-iamge" href = "{{ news.news-url }}"><img src="{{ news.image-url }}" class="news-picture"></a>
+    <div class = "news-cell">
+      <a class="news-image" href = "{{ news.news-url }}"><img src="{{ news.image-url }}" class="news-picture"></a>
       <br>
       <p><a class="citation" href = "{{ news.news-url }}">{{ news.title }}</a></p>
       <p><a href="{{ news.licence-url }}">{{ news.licence }}</a></p>
@@ -56,6 +55,5 @@ layout: index
     {% for film in site.data.films %}
     <p><a href="{{ film.homepage }}">{{ film.name }}, {{ film.year }}</a></p>
     {% endfor %}
-    {{ test.description }}
 </div>
 
