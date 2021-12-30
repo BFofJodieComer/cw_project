@@ -55,6 +55,13 @@ h4 {
     padding: 40px;
     margin-bottom: -20px;
 }
+.subheading3 {
+    margin: auto;
+    width: 70%;
+    padding: 40px;
+    margin-bottom: -20px;
+}
+
 
 p {
     font-family: sans-serif;
@@ -62,14 +69,15 @@ p {
     line-height: 25px;
 }
 
+.subheading1 p{
+    width: 150%;
+    margin-left: 6%;
+}
+
 .subheading2 p{
     text-align: justify;
 }
 
-.subheading1 p{
-    width: 150%;
-    margin-left: -27%;
-}
 
 #footer p {
     font-size: small;
@@ -145,7 +153,7 @@ a.citation:link {
 
 /* mouse over link */
 a.citation:hover {
-    color: #94618e;
+    color: #F4DECB;
 }
 
 
@@ -204,10 +212,13 @@ a.news-image:hover {
     grid-column-gap: 40px;
     padding: 20px;
     margin-left: 15%;
+    margin-bottom: 10%;
+
 }
 
 .news-picture {
     width: 320px;
+    height: 200px;
     object-fit: cover;
 }
 
