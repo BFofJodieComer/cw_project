@@ -120,11 +120,17 @@ a.citation:link {
 }
 
 /* mouse over link */
-
-a.news-image:hover {
-    background-color: #F4DECB;
+/* unvisited link */
+a.news-image:link {
+    float: center;
+    display: block;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
 }
 
+a.news-image:hover {
+    background-color: inherit;
+}
 
 .paracontainer::after {
     content: "";
