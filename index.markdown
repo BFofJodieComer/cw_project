@@ -4,7 +4,8 @@ layout: index
 ---
 
 <div class="heading">
-    <h1> Understanding Transgender Identity</h1>
+    <h1><span style='font-size:100px;'>&#127752;</span>Understanding Transgender Identity<span class="mirror" style='font-size:100px;'>&#127752;</span></h1>
+    <h4> <i>Proud To Be Me</i> </h4>
 </div>
 
 <hr>
@@ -23,7 +24,7 @@ layout: index
 <hr>
 
 <div class="subheading1">
-    <h2> Latest News </h2>
+    <h2><span class="mirror" style='font-size:30px;'>&#128226;</span> Latest News <span style='font-size:30px;'>&#128226;</span> </h2>
 </div>
 
 <div id = "news-container">
@@ -48,7 +49,7 @@ layout: index
 
 
 <div class="subheading1">
-    <h2> Recommended Films </h2>
+    <h2> <span class="mirror" style='font-size:30px;'>&#127916;</span> Recommended Films <span style='font-size:30px;'>&#127916;</span> </h2>
 </div>
 
 <div class="defaultcontainer">

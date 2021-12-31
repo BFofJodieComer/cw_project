@@ -31,8 +31,9 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
-    margin-bottom: -3%;
+    font-size: 22px;
+    margin-bottom: -6%;
+    text-align: center;
 }
 
 .defaultcontainer{
@@ -112,7 +113,7 @@ p {
     letter-spacing: 1px;
     font-size: 40px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 70px;
 }
 
 ul {
@@ -258,11 +259,27 @@ a.news-image:hover {
     background-color: white;
 }
 
+#search-container p {
+    text-align: center;
+}
+
+
 iframe {
     width: 170%;
     height: 70%;
     margin-left: -35%;
 }
+
+.mirror{
+    display: inline-block; 
+    font-size: 30px;
+
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 
 @media (min-width: 600px) {
     #gallery { 
