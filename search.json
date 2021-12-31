@@ -13,6 +13,3 @@
     
   {% endfor %}
 ]
-
-We don't know how to include all the items mentioned in our website for users to seearch.
-We expect to link back to the webpage mentioned those items displayed in the results.

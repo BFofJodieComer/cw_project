@@ -78,6 +78,11 @@ p {
     text-align: justify;
 }
 
+.subheading3 p{
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
 
 #footer p {
     font-size: small;
@@ -153,7 +158,7 @@ a.citation:link {
 
 /* mouse over link */
 a.citation:hover {
-    color: #F4DECB;
+    color: #49274a;
 }
 
 
