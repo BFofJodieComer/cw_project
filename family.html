@@ -10,34 +10,77 @@ layout: index
 <hr>
 
 <div class="paracontainer">
-    <div class="subheading2">
+    <div class="subheading4">
     <blockquote>
     <p>Children’s mental and physical health are affected when they feel that their family rejects their transgender identity.  Transgender children who feel rejected by their family are more likely to attempt suicide, develop depression, use illegal drugs, and contract HIV and other sexually transmitted diseases.</p>
     </blockquote>
-    </div>
-
-    <div class="subheading">
-        <h2>What is Encouraged?</h2>
-            <ul>
-                <li>Talk openly with your child and other family members about your child’s transgender identity. </li> 
-                <li> Show your child affection when he or she tells you about his or her transgender identity. </li> 
-                <li>Bring your child to LGBT events or organizations.</li>
-                <li> Connect your child with a transgender adult role model to show options for the future.</li>
-                <li>Stand up for your child when he or she is mistreated by someone else because of his or her transgender identity. </li>
-            </ul>  
-    </div>
-
-    <div class="subheading">
-        <h2>Behaviours to Avoid!<h2>
-            <ul> 
-                <li> Hitting, slapping, or physically hurting your child because of their LGBT identity. </li>
-                <li> Name-calling because of your child’s transgender identity. </li> 
-                <li> Excluding your child from family activities. </li> 
-                <li> Blocking your child’s access to other transgender children and adults. </li> 
-                <li> Making your child keep his or her transgender identity a secret. </li> 
-            </ul>
-    </div>
 </div>
 
+<div class="subheading">
+    <h2>What is Encouraged</h2>
+    {% for plus in site.data.family1 %}
+    <p> 
+        <ul>
+        <li>{{ plus.content }}</li>
+        </ul>
+    </p>  
+    {% endfor %}
+</div>
+
+    <div class="subheading">
+        <h2>Behaviours to Avoid!</h2>
+        {% for plus in site.data.family2 %}
+         <p>
+            <ul>
+            <li>{{ plus.answer }}</li>
+            </ul>
+        </p>  
+        {% endfor %}
+    </div>
+</div>
+<hr>
+<div class="subheading2">
+    <h3><i> “In learning about their child’s true sense of self, parents of transgender and gender-expansive youth have an incredible opportunity to deepen their relationship with their child in a profound way.” - Joel Baum</i></h3>
+ </div>
+<hr>
+
+<div class="subheading4">
+    <blockquote>
+    <p>Much like your loved one, you will be challenged with a period of transition: 
+    From being the parent of a son to becoming the parent of a daughter or from having a sister to having a sibling who is agender or a brother who is transgender.
+    </p>
+    </blockquote>
+</div>
 
     
+<div class="paracontainer">
+    <div class="subheading">
+        <h2> Q: What is okay to ask and say when my loved ones are transgender? </h2>
+        <blockquote>
+        <p>
+            Remember, when asking these questions don’t begin with the expectation that you’ll get all of your questions answered immediately.
+            It is essential that the questions you ask are coming from a place that seeks to better understand the person’s experiences and needs, not simply satisfy your curiosity.
+            Here are a few suggested questions to begin this dialogue with transgender and gender-expansive adults and adolescents:
+        </p>
+        <p>
+            {% for question in site.data.family3 %}
+            <p>
+               <ul>
+               <li>{{ question.content }}</li>
+               </ul>
+           </p>  
+           {% endfor %}        
+        </p>
+        </blockquote>
+    </div>
+    <div class="subheading">
+        <h2>Kim Kardashian Asks Caitlyn Jenner Questions About Her Sexuality</h2>
+        <iframe class="kard" src="https://www.youtube.com/embed/wNfEqYvqg9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>   
+</div>   
+
+<div class="subheading5">
+    <blockquote>
+    <p> All the content displayed are extracted from <a class="citation" href="https://pflag.org/ourtranslovedones"><u>Our Trans Loved Ones</u></a></p>
+    </blockquote>   
+</div>
