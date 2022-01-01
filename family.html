@@ -4,33 +4,34 @@ layout: index
 ---
 <div class="heading">
     <h1> Transgender and Family </h1>
-    <h4> <i>"If my daughter was so brave to face the torment, how could I not stand behind her and hold her up?" - Robynn B.</i></h4>
+    <h2> <i>"If my daughter was so brave to face the torment, how could I not stand behind her and hold her up?" - Robynn B.</i></h2>
 </div>
 
 <hr>
 
-<div class="paracontainer">
-    <div class="subheading4">
+
+<div class="subheading3">
     <blockquote>
     <p>Children’s mental and physical health are affected when they feel that their family rejects their transgender identity.  Transgender children who feel rejected by their family are more likely to attempt suicide, develop depression, use illegal drugs, and contract HIV and other sexually transmitted diseases.</p>
     </blockquote>
 </div>
 
-<div class="subheading">
-    <h2>What is Encouraged</h2>
-    {% for plus in site.data.family1 %}
-    <p> 
-        <ul>
-        <li>{{ plus.content }}</li>
-        </ul>
-    </p>  
-    {% endfor %}
-</div>
+<div class="paracontainer">
+    <div class="subheading">
+        <h2>What is Encouraged</h2>
+        {% for plus in site.data.family1 %}
+        <p> 
+            <ul>
+            <li>{{ plus.content }}</li>
+            </ul>
+        </p>  
+        {% endfor %}
+    </div>
 
     <div class="subheading">
         <h2>Behaviours to Avoid!</h2>
         {% for plus in site.data.family2 %}
-         <p>
+        <p>
             <ul>
             <li>{{ plus.answer }}</li>
             </ul>
@@ -39,12 +40,13 @@ layout: index
     </div>
 </div>
 <hr>
+
 <div class="subheading2">
     <h3><i> “In learning about their child’s true sense of self, parents of transgender and gender-expansive youth have an incredible opportunity to deepen their relationship with their child in a profound way.” - Joel Baum</i></h3>
  </div>
 <hr>
 
-<div class="subheading4">
+<div class="subheading3">
     <blockquote>
     <p>Much like your loved one, you will be challenged with a period of transition: 
     From being the parent of a son to becoming the parent of a daughter or from having a sister to having a sibling who is agender or a brother who is transgender.
@@ -79,7 +81,7 @@ layout: index
     </div>   
 </div>   
 
-<div class="subheading5">
+<div id="footer">
     <blockquote>
     <p> All the content displayed are extracted from <a class="citation" href="https://pflag.org/ourtranslovedones"><u>Our Trans Loved Ones</u></a></p>
     </blockquote>   

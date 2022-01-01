@@ -4,8 +4,8 @@ layout: index
 ---
 
 <div class="heading">
-    <h1><span style='font-size:100px;'>&#127752;</span>Understanding Transgender Identity<span class="mirror" style='font-size:100px;'>&#127752;</span></h1>
-    <h4> <i>Proud To Be Me</i> </h4>
+    <h1><span style='font-size: 80px ;'>&#127752;</span>Understanding Transgender Identity<span class="mirror" style='font-size: 80px;'>&#127752;</span></h1>
+    <h2> <i>Proud To Be Me</i> </h2>
 </div>
 
 <hr>
@@ -42,8 +42,7 @@ layout: index
 <hr>
 
 <div class="subheading1">
-    <h3> <i>"I am transgender and this doesn't mean that I am unlovable."</i> </h3>
-    <p> — Lana Wachowski, HRC Visibility Award Acceptance Speech </p>
+    <h3> <i>"I am transgender and this doesn't mean that I am unlovable." — Lana Wachowski, HRC Visibility Award Acceptance Speech</i> </h3>
 </div>
 <hr>
 
