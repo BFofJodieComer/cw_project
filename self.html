@@ -3,40 +3,32 @@ title: Transgender and Self-identification
 layout: index
 ---
 
+<!-- page heading -->
 <div class="heading">
     <h1> Transgender and Self-identification </h1>
     <h2><i> "Imagine if you had been born in the opposite body." - Lily Carollo</i></h2>
 </div>
 <hr>
 
+<!-- 3 questions -->
 <div class="subheading2">
-    <h2> Q: How do transgender people perceive their gender? </h2>
-    <blockquote><p>Transgender people don't identify their gender as the sex they were assigned at birth. These people are adopting forms of gender identity and expression that aren't related to their body parts or what sex they assigned at birth <a class="citation" href="https://www.vox.com/2015/4/24/8483561/transgender-gender-identity-expression"><u>(Lopez, 2015).</u></a>
-    </p>
-    </blockquote>
- </div>
+   {% for question in site.data.questions %}
+   <h2> {{ question.title }} </h2>
+   <blockquote><p>{{ question.content }}</p></blockquote>
+   <br>
+   <br>
+   <br>
+   {% endfor %}
+</div>
+<hr>
 
- <div class="subheading2">
-    <h2> Q: What types of interventions are used for transition and is it compulsory? </h2>
-    <blockquote><p>Transition refers to a change in gender role. Hormone therapy and/or surgery to feminize or masculinize the body may be part of that. A change in gender role may also be part time or involve changes in some parts of gender expression and not in others.</a>
-    </p>
-    <p>Among the younger generation, there are transgender individuals who feel that transitioning from A to B does not apply to them. Rather, they say that they always have been C (i.e., transgender or genderqueer). In short, transition is a means to affirm gender identity, and includes steps and interventions that are implemented to varying degrees by people within this diverse community <a class="citation" href="https://www.apa.org/news/press/releases/2015/11/psychology-transgender"><u>(Bockting, 2015).</u></p>
-    </blockquote>
- </div>
-
- <div class="subheading2">
-    <h2> Q: Does transition affect one's sexual orientation? </h2>
-    <blockquote><p>A common misconception is that gender identity and expression are linked to sexual or romantic attraction. But a trans person can identify as a man, even though he was assigned female at birth, and be gay (attracted to other men), straight (attracted to women), bisexual, asexual (sexually attracted to no one), or attracted to a traditionally undefined gender. Trans women, gender nonconforming people, genderqueer people, and nonbinary people can also be sexually attracted to men, women, both, no one, or another preference <a class="citation" href="https://www.vox.com/2015/4/24/8483561/transgender-gender-identity-expression"><u>(Lopez, 2015)</u></a>.
-    </p>
-    </blockquote>
- </div>
- <hr>
-
+<!-- quotation catch phrase -->
  <div class="subheading2">
     <h3><i> “Unlike fingerprints, a child’s gender web is not indelible. It can change and flow throughout that child’s life.” - Barz and Owen</i></h3>
  </div>
  <hr>
 
+ <!-- 9 quotation cards -->
 <div id = "quote-container">
    {% for quote in site.data.director %}
   <div class="quote-cell">
@@ -46,15 +38,18 @@ layout: index
 </div>
 <hr>
 
+<!-- quotation catch phrase -->
 <div class="subheading2">
    <h3><i> "You do deserve better, and if better isn’t around you, you find that better. But you have to find it in yourself first." - Tiamat Eva Medusa, 2018</i></h3>
 </div>
 <hr>
 
+<!-- Dragon Lady video -->
 <div class="subheading2">
-   <h2> Motivations Behind Transition: Using Body to Free Mind </h2>
-   <iframe src="https://www.youtube.com/embed/_d_nycoiLwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <p>“Tiamat has undergone extreme body modification to become a dragon. Her ears and nostrils have been removed, her eyes are stained green, and she is covered in implanted horns and tattooed scales. Tiamat no longer looks human. I thought she was beautiful, and when I learned that she is also a transgender woman <a class="citation" href="https://www.vice.com/en/article/kz5bxa/eva-tiamat-medusa-dragon-lady-transgender">(Tourjée, 2018)</a>.”
-   </p>
+   {% for video in site.data.self-dragon %}
+   <h2> {{ video.title}} </h2>
+   {{ video.video-url }}
+   <p>{{ video.content }}</p>
+   {% endfor %}
 </div>
  

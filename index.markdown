@@ -2,7 +2,7 @@
 title: Home | Understanding Transgender Identity
 layout: index
 ---
-
+<!-- page heading -->
 <div class="heading">
     <h1><span style='font-size: 80px ;'>&#127752;</span>Understanding Transgender Identity<span class="mirror" style='font-size: 80px;'>&#127752;</span></h1>
     <h2> <i>Proud To Be Me</i> </h2>
@@ -10,20 +10,26 @@ layout: index
 
 <hr>
 
+<!-- definition and aim -->
 <div class="paracontainer">
     <div class="subheading">
-        <h2> What is Transgender </h2>
-        <p>"Transgender is an umbrella term for people whose gender identity and/or gender expression differs from the sex they were assigned at birth <a class="citation" href="https://www.glaad.org/reference/transgender"><u>(Gay and Lesbian Alliance Against Defamation [GLAAD], 2007)</u></a>.”  “Transgender individuals should be identified with the pronoun that correspond with the gender with which they identify. It is appropriate to respectfully ask their name and what pronoun they prefer that you use <a class="citation" href="https://books.google.com/books?hl=en&lr=&id=XS3XJL_RGIgC&oi=fnd&pg=PP1&dq=Altilio,+Terry%3B+Otis-Green,+Shirley+(2011).+Oxford+Textbook+of+Palliative+Social+Work.+Oxford+University+Press.+p.+380.&ots=ak946C8Tcx&sig=ZK8zOWrvE99ZOQB2ZUVTUdUf1MM"><u>(Altilio and Otis-Green, 2011, p. 380)</u></a>."</p>
+        {% for line in site.data.home-definition %}
+        <h2> {{ line.definition}} </h2>
+        <p>{{ line.definition-content }}</p>
+        {% endfor %}
     </div>
      <div class="subheading">
-        <h2> Our Aim </h2>
-        <p>This is a Transgender website covering the most emergent issues around transgender group. It aims at establishing a fundamental understanding to the public about this minority group, creating a sense of inclusion for transgender group, and providing researchers with controversial dilemmas and debates for research purposes.</p>
+        {% for line in site.data.home-definition %}    
+        <h2> {{ line.aim }} </h2>
+        <p>{{ line.aim-content }}</p>
+        {% endfor %}
      </div>
 </div>
 <br>
 <hr>
 
-<div class="subheading1">
+<!-- latest news -->
+<div class="subheading2">
     <h2><span class="mirror" style='font-size:30px;'>&#128226;</span> Latest News <span style='font-size:30px;'>&#128226;</span> </h2>
 </div>
 
@@ -41,13 +47,14 @@ layout: index
 <br>
 <hr>
 
-<div class="subheading1">
+<!-- quotation catch phrase -->
+<div class="subheading2">
     <h3> <i>"I am transgender and this doesn't mean that I am unlovable." — Lana Wachowski, HRC Visibility Award Acceptance Speech</i> </h3>
 </div>
 <hr>
 
-
-<div class="subheading1">
+<!-- recommended films -->
+<div class="subheading2">
     <h2> <span class="mirror" style='font-size:30px;'>&#127916;</span> Recommended Films <span style='font-size:30px;'>&#127916;</span> </h2>
 </div>
 

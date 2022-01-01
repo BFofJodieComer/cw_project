@@ -33,8 +33,7 @@ h1 {
     text-align: center;
     letter-spacing: 1px;
     font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 5%;
     width: 120%;
     margin-left: -10%;
 }
@@ -43,7 +42,7 @@ h1 {
 h2 {
     text-align: center;
     margin-bottom: 10%;
-    line-height: 40px;
+    line-height: 200%;
 }
 
 /* quotation catch phrase  */
@@ -51,6 +50,7 @@ h3 {
     font-size: 30px;
     text-align: center;
     width: 100%;
+    line-height: 170%;
 }
 
 /* 所有正文 */
@@ -74,6 +74,7 @@ p {
     text-align: center;
 }
 
+
 /* 所有容器 */
 /* 所有容器 */
 /* 所有容器 */
@@ -85,20 +86,11 @@ p {
     margin-bottom: -13%;
 }
 
-/* home: definition and aim */
+/* home: definition and aim, latest news, recommended films */
 .subheading {
     float: left;
     width: 50%;
-    padding: 40px;
-    margin-bottom: -20px;
-}
-
-/* home: latest news */
-.subheading1 {
-    margin: auto;
-    width: 150%;
-    padding: 40px;
-    margin-bottom: -20px;
+    padding: 5%;
 }
 
 /* self: 3 questions, quotation catch phrase */
@@ -106,7 +98,8 @@ p {
     margin: auto;
     width: 60%;
     padding: 40px;
-    margin-bottom: -20px;
+    margin-bottom: 1%;
+    margin-top: 5%;
 }
 
 .subheading3 {
@@ -114,25 +107,19 @@ p {
     width: 90%;
     padding: 40px;
     margin-bottom: 0%;
-    margin-top: 0px;
     font-size: 20px;
 }
 
 .paracontainer {
     clear: both;
-    display: table;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
 }
 
 .subheading ul{
     text-align: justify;
     line-height: 30px;
-}
-
-.subheading1 {
-    margin: auto;
-    width: 50%;
-    padding: 40px;
-    margin-bottom: -20px;
 }
 
 #news-container {
@@ -150,13 +137,14 @@ p {
 }
 
 #quote-container {
-    width: 70%;
+    width: 80%;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column-gap: 40px;
+    grid-column-gap: 8%;
     padding: 20px;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .news-picture {
@@ -169,7 +157,7 @@ p {
     width: 70%;
     padding: 40px;
     margin-top: -8%;
-    margin-left: 17%;
+    margin-left: 22%;
     margin-bottom: 30%;
 }
 
@@ -275,14 +263,8 @@ iframe {
 
 iframe.kard {
     width: 120%;
-    height: 300%;
+    height:  60%;
     margin-left: 0%;
-}
-
-ul {
-    font-family: sans-serif;
-    font-size: 20px;
-    line-height: 25px;
 }
 
 /* 设备视图 */
@@ -306,8 +288,6 @@ ul {
         grid-template-columns: repeat(4, 275px); 
     }
   }
-
-
 
 @media (min-width: 600px) {
     #exhibit {

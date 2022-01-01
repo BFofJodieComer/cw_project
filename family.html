@@ -2,20 +2,22 @@
 title: Transgender and Family
 layout: index
 ---
+
+<!-- page heading -->
 <div class="heading">
     <h1> Transgender and Family </h1>
     <h2> <i>"If my daughter was so brave to face the torment, how could I not stand behind her and hold her up?" - Robynn B.</i></h2>
 </div>
-
 <hr>
 
-
+<!-- guiding paragraph -->
 <div class="subheading3">
     <blockquote>
     <p>Children’s mental and physical health are affected when they feel that their family rejects their transgender identity.  Transgender children who feel rejected by their family are more likely to attempt suicide, develop depression, use illegal drugs, and contract HIV and other sexually transmitted diseases.</p>
     </blockquote>
 </div>
 
+<!-- encouraged and unencouraged behaviours -->
 <div class="paracontainer">
     <div class="subheading">
         <h2>What is Encouraged</h2>
@@ -27,7 +29,6 @@ layout: index
         </p>  
         {% endfor %}
     </div>
-
     <div class="subheading">
         <h2>Behaviours to Avoid!</h2>
         {% for plus in site.data.family2 %}
@@ -41,11 +42,13 @@ layout: index
 </div>
 <hr>
 
+<!-- quotation catch phrase -->
 <div class="subheading2">
     <h3><i> “In learning about their child’s true sense of self, parents of transgender and gender-expansive youth have an incredible opportunity to deepen their relationship with their child in a profound way.” - Joel Baum</i></h3>
  </div>
 <hr>
 
+<!-- guiding paragraph -->
 <div class="subheading3">
     <blockquote>
     <p>Much like your loved one, you will be challenged with a period of transition: 
@@ -54,30 +57,29 @@ layout: index
     </blockquote>
 </div>
 
-    
+<!-- advice on intra-family communication -->
 <div class="paracontainer">
     <div class="subheading">
-        <h2> Q: What is okay to ask and say when my loved ones are transgender? </h2>
+        {% for question in site.data.family3-1 %}
+        <h2> {{ question.title }} </h2>
         <blockquote>
-        <p>
-            Remember, when asking these questions don’t begin with the expectation that you’ll get all of your questions answered immediately.
-            It is essential that the questions you ask are coming from a place that seeks to better understand the person’s experiences and needs, not simply satisfy your curiosity.
-            Here are a few suggested questions to begin this dialogue with transgender and gender-expansive adults and adolescents:
-        </p>
-        <p>
-            {% for question in site.data.family3 %}
-            <p>
-               <ul>
-               <li>{{ question.content }}</li>
-               </ul>
-           </p>  
-           {% endfor %}        
-        </p>
+        <p>{{ question.guiding }}</p>
         </blockquote>
+        {% endfor %}
+        <br>
+        {% for question in site.data.family3 %}
+        <p>
+            <ul>
+            <li>{{ question.content }}</li>
+            </ul>
+        </p>  
+           {% endfor %}        
     </div>
     <div class="subheading">
-        <h2>Kim Kardashian Asks Caitlyn Jenner Questions About Her Sexuality</h2>
-        <iframe class="kard" src="https://www.youtube.com/embed/wNfEqYvqg9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% for video in site.data.family-kim %}
+        <h2>{{ video.title }}</h2>
+        {{ video.video-url }}
+        {% endfor %}
     </div>   
 </div>   
 
