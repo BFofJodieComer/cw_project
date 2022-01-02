@@ -2,3 +2,31 @@
 title: Transgender and Society
 layout: index
 ---
+
+<!-- page heading -->
+<div class="heading">
+    <h1> Transgender and Society </h1>
+    <h2> <i>"If my daughter was so brave to face the torment, how could I not stand behind her and hold her up?" - Robynn B.</i></h2>
+</div>
+<hr>
+
+<!-- guiding paragraph -->
+<div class="subheading3">
+    <blockquote>
+    <p>With greater attention in the society comes greater controversy to the Transgender community. We have selected the most emergent and controversial cases around the equality of Transgender in different social scenarios. Click the pictures or the titles below to know more information and participate in our discussion.</p>
+    </blockquote>
+</div>
+
+<div id = "soc-container">
+  {% assign sorted_news = site.exhibits %}
+  {% for news in sorted_news %}
+    <div class = "news-cell">
+      <a class="news-image" href = "{{ news.news-url }}"><img src="{{ news.image-url }}" class="news-picture"></a>
+      <br>
+      <p><a class="citation" href = "{{ news.news-url }}">{{ news.title }}</a></p>
+      <p><a href="{{ news.licence-url }}">{{ news.licence }}</a></p>
+    </div>
+  {% endfor %}
+</div>
+<br>
+<hr>
