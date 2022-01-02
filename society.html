@@ -5,7 +5,7 @@ layout: index
 
 <!-- page heading -->
 <div class="heading">
-    <h1> Transgender and Society </h1>
+    <h1><span style='font-size: 80px ;'>&#127752;</span>Transgender and Society<span class="mirror" style='font-size: 80px;'>&#127752;</span></h1>
     <h2> <i>“Include everyone, no matter their gender, sexual orientation, race, or religion. We are all human beings and we are part of society.” - Lea T </i></h2>
 </div>
 <hr>
@@ -16,16 +16,18 @@ layout: index
     <p>With greater attention in the society comes greater controversy to the Transgender community. We have selected the most emergent and controversial cases around the equality of Transgender in different social scenarios. Click the pictures or the titles below to know more information and participate in our discussion.</p>
     </blockquote>
 </div>
+<hr>
 
 <!-- 3 directions of society -->
-<div id = "news-container">
+  <div class="subheading2">
+    <h2> Selected Topics  </h2>
+  </div>
   {% for  news in site.data.society-pictures %}
     <div class = "news-cell">
-      <a class="news-image" href = "{{ site.baseurl }}/{{ news.embed }}"><img src="{{ news.picture }}" class="news-picture"></a>
-      <br>
-      <p><a class="citation" href = "{{ site.baseurl }}/{{ news.embed }}">{{ news.title }}</a></p>
+      <p><a class="citation" href = "{{ site.baseurl }}/{{ news.embed }}"><b>{{ news.title }}</b></a></p>
     </div>
   {% endfor %}
+
 </div>
 <br>
 <br>

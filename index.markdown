@@ -32,15 +32,11 @@ layout: index
 <div class="subheading2">
     <h2><span class="mirror" style='font-size:30px;'>&#128226;</span> Latest News <span style='font-size:30px;'>&#128226;</span> </h2>
 </div>
-
 <div id = "news-container">
   {% assign sorted_news = site.exhibits %}
   {% for news in sorted_news %}
     <div class = "news-cell">
-      <a class="news-image" href = "{{ news.news-url }}"><img src="{{ news.image-url }}" class="news-picture"></a>
-      <br>
-      <p><a class="citation" href = "{{ news.news-url }}">{{ news.title }}</a></p>
-      <p><a href="{{ news.licence-url }}">{{ news.licence }}</a></p>
+      <p><a class="citation" href = "{{ news.news-url }}"><b>{{ news.title }}</b></a></p>
     </div>
   {% endfor %}
 </div>
