@@ -36,12 +36,13 @@ h1 {
     margin-bottom: 5%;
     width: 120%;
     margin-left: -10%;
+    line-height: 200%;
 }
 
 /* subheading in each div */
 h2 {
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     line-height: 200%;
 }
 
@@ -123,13 +124,14 @@ p {
 }
 
 #news-container {
-    width: 70%;
+    width: 92%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-row: 1;
     grid-column-gap: 10px;
     padding: 10px;
     margin-left: 3%;
+    margin-bottom: 5%;
 }
 
 .news-cell {
@@ -148,9 +150,14 @@ p {
 }
 
 .news-picture {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.society-picture {
     width: 320px;
     height: 200px;
-    object-fit: cover;
 }
 
 .defaultcontainer {

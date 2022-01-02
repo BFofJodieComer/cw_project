@@ -1,0 +1,29 @@
+---
+title: Transgender and Society
+layout: index
+---
+<!-- page heading -->
+<div class="heading">
+    {% for sport in site.data.society-sports %}
+    <h1> {{ sport.title }} </h1>
+    {% endfor %}
+</div>
+<hr>
+
+<!-- content -->
+ <div class="subheading2">
+    <h3>Case Background</h3>
+    {% for sport in site.data.society-sports %}
+    <p>{{ sport.content }}</p>
+    {% endfor %}
+ </div>
+ <hr>
+
+ <!-- recommended videos -->
+ <div class="subheading2">
+    <h3>Recommended Sources</h3>
+    {% for sport in site.data.society-sports %}
+    <h2>{{ sport.video-title }}</h2>
+    {{ sport.video }}
+    {% endfor %}
+ </div>

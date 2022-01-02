@@ -1,0 +1,31 @@
+---
+title: Transgender and Society
+layout: index
+---
+<!-- page heading -->
+<div class="heading">
+    {% for marketing in site.data.society-marketing %}
+    <h1> {{ marketing.title }} </h1>
+    {% endfor %}
+</div>
+<hr>
+
+<!-- content -->
+ <div class="subheading2">
+    <h3>Case Background</h3>
+    {% for marketing in site.data.society-marketing %}
+    <p>{{ marketing.content }}</p>
+    <p>{{ marketing.jari}}</p>
+    <p>{{ marketing.ending }}</p>
+    {% endfor %}
+ </div>
+ <hr>
+
+ <!-- recommended videos -->
+ <div class="subheading2">
+    <h3>Recommended Sources</h3>
+    {% for marketing in site.data.society-marketing %}
+    <h2>{{ marketing.video-title }}</h2>
+    {{ marketing.video }}
+    {% endfor %}
+ </div>

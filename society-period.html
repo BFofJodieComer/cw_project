@@ -1,0 +1,39 @@
+---
+title: Transgender and Society
+layout: index
+---
+<!-- page heading -->
+<div class="heading">
+    {% for period in site.data.society-period %}
+    <h1> {{ period.title }} </h1>
+    {% endfor %}
+</div>
+<hr>
+
+<!-- content -->
+ <div class="subheading2">
+    <h3>Case Background</h3>
+    {% for picture in site.data.society-period %}
+    <p>{{ picture.background-information}}</p>
+    {% endfor %}
+ </div>
+ <hr>
+
+ <div class="subheading2">
+    <h3>J.K. Rowling's Self-defence</h3>
+    {% for picture in site.data.society-period %}
+    <p>{{ picture.rowling-defence }}</p>
+    <p>{{ picture.ending }}</p>
+    {% endfor %}
+ </div>
+ <hr>
+
+ <!-- recommended videos -->
+ <div class="subheading2">
+    <h3>Recommended Sources</h3>
+    <br>
+    {% for picture in site.data.society-period %}
+    <h2>{{ picture.video-title }}</h2>
+    {{ picture.video }}
+    {% endfor %}
+ </div>

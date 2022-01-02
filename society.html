@@ -6,7 +6,7 @@ layout: index
 <!-- page heading -->
 <div class="heading">
     <h1> Transgender and Society </h1>
-    <h2> <i>"If my daughter was so brave to face the torment, how could I not stand behind her and hold her up?" - Robynn B.</i></h2>
+    <h2> <i>“Include everyone, no matter their gender, sexual orientation, race, or religion. We are all human beings and we are part of society.” - Lea T </i></h2>
 </div>
 <hr>
 
@@ -17,16 +17,18 @@ layout: index
     </blockquote>
 </div>
 
-<div id = "soc-container">
-  {% assign sorted_news = site.exhibits %}
-  {% for news in sorted_news %}
+<!-- 3 directions of society -->
+<div id = "news-container">
+  {% for  news in site.data.society-pictures %}
     <div class = "news-cell">
-      <a class="news-image" href = "{{ news.news-url }}"><img src="{{ news.image-url }}" class="news-picture"></a>
+      <a class="news-image" href = "{{ site.baseurl }}/{{ news.embed }}"><img src="{{ news.picture }}" class="news-picture"></a>
       <br>
-      <p><a class="citation" href = "{{ news.news-url }}">{{ news.title }}</a></p>
-      <p><a href="{{ news.licence-url }}">{{ news.licence }}</a></p>
+      <p><a class="citation" href = "{{ site.baseurl }}/{{ news.embed }}">{{ news.title }}</a></p>
     </div>
   {% endfor %}
 </div>
 <br>
-<hr>
+<br>
+<br>
+<br>
+<br>
