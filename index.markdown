@@ -53,7 +53,6 @@ layout: index
 <div class="subheading2">
     <h2> <span class="mirror" style='font-size:30px;'>&#127916;</span> Recommended Films <span style='font-size:30px;'>&#127916;</span> </h2>
 </div>
-
 <div class="defaultcontainer">
     {% for film in site.data.films %}
     <p><a href="{{ film.homepage }}">{{ film.name }}, {{ film.year }}</a></p>

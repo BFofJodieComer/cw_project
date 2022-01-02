@@ -16,6 +16,7 @@ layout: index
     <p>Children’s mental and physical health are affected when they feel that their family rejects their transgender identity.  Transgender children who feel rejected by their family are more likely to attempt suicide, develop depression, use illegal drugs, and contract HIV and other sexually transmitted diseases.</p>
     </blockquote>
 </div>
+<hr>
 
 <!-- encouraged and unencouraged behaviours -->
 <div class="paracontainer">
@@ -56,15 +57,13 @@ layout: index
     </p>
     </blockquote>
 </div>
+<hr>
 
 <!-- advice on intra-family communication -->
 <div class="paracontainer">
     <div class="subheading">
         {% for question in site.data.family3-1 %}
         <h2> {{ question.title }} </h2>
-        <blockquote>
-        <p>{{ question.guiding }}</p>
-        </blockquote>
         {% endfor %}
         <br>
         {% for question in site.data.family3 %}

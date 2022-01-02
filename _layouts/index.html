@@ -8,14 +8,24 @@
 </head>
 <body>
     <div id="wrapper">
+        <br>
         <div class = "tophead">
             <div id="topnav">
                 <nav>
+                    <a href="{{ site.baseurl }}/search">Search</a>
                     <a href="{{ site.baseurl }}/">Home</a>
                     <a href="{{ site.baseurl }}/self">Self</a>
                     <a href="{{ site.baseurl }}/family">Family</a>
-                    <a href="{{ site.baseurl }}/society">Society</a>
-                    <a href="{{ site.baseurl }}/search">Search</a>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="{{ site.baseurl }}/society">Society</a>
+                        </button>
+                            <div class="dropdown-content">
+                                <a href="{{ site.baseurl }}/society-period">Menstruation</a>
+                                <a href="{{ site.baseurl }}/society-sports">Sports</a>
+                                <a href="{{ site.baseurl }}/society-marketing">Marketing</a>
+                                </div>
+                            </div> 
+                    </div>
                 </nav>
             </div>
         </div>
@@ -26,5 +36,3 @@
         </div>
     </div>
 </body>
-
-
