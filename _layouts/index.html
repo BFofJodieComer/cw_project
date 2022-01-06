@@ -12,10 +12,22 @@
         <div class = "tophead">
             <div id="topnav">
                 <nav>
-                    <a href="{{ site.baseurl }}/search">Search</a>
-                    <a href="{{ site.baseurl }}/">Home</a>
-                    <a href="{{ site.baseurl }}/self">Self</a>
-                    <a href="{{ site.baseurl }}/family">Family</a>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="{{ site.baseurl }}/">Home</a>
+                        </button>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="{{ site.baseurl }}/self">Self</a>
+                        </button>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="{{ site.baseurl }}/family">Family</a>
+                        </button>
+                    </div>
+                    
                     <div class="dropdown">
                         <button class="dropbtn"><a href="{{ site.baseurl }}/society">Society</a>
                         </button>
@@ -23,13 +35,19 @@
                                 <a href="{{ site.baseurl }}/society-period">Menstruation</a>
                                 <a href="{{ site.baseurl }}/society-sports">Sports</a>
                                 <a href="{{ site.baseurl }}/society-marketing">Marketing</a>
-                                </div>
                             </div> 
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="{{ site.baseurl }}/search">Search</a>
+                        </button>
                     </div>
                 </nav>
             </div>
         </div>
            {{ content }}
+        <br>
+
         <hr>
         <div id="footer">
             <p>Created with Jekyll for the module Cultural Web by <b>King's Nando's<span style='font-size:20px;'>&#127831;</span></b> in 2021</p >

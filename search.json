@@ -1,15 +1,18 @@
 ---
 ---
 [
-  {% for film in site.data.films %}
+  
+  {% for search in site.data.search %}
     {
       
-      "title"    : "{{ film.name }}",
-      "url"      : "{{ site.baseurl }}{{ film.homepage }}",
-      "licence"  : "{{ exhibits.licence }}",
-      "year"     : "{{ film.year | date: "%Y" }}"
+      "title"    : "{{ search.name }}",
+      "url"      : "{{ site.baseurl }}{{ search.homepage }}",
+      "year"     : "{{ search.year | date: "%Y" }}"
 
     }{% unless forloop.last %},{% endunless %}
     
   {% endfor %}
+  
 ]
+
+

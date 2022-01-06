@@ -4,7 +4,7 @@ layout: index
 ---
 <!-- page heading -->
 <div class="heading">
-    <h1><span style='font-size: 80px ;'>&#127752;</span>Understanding Transgender Identity<span class="mirror" style='font-size: 80px;'>&#127752;</span></h1>
+    <h1><span style='font-size: 75px ;'>&#127752;</span>Understanding Transgender Identity<span class="mirror" style='font-size: 75px;'>&#127752;</span></h1>
     <h2> <i>Proud To Be Me</i> </h2>
 </div>
 

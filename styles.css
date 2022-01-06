@@ -13,13 +13,14 @@ body {
     margin: auto;
 }
 
+
 /* navigation */
 /* navigation */
 /* navigation */
 
 nav {
     font-family: sans-serif;
-    font-size: larger;
+    font-size: 20px;
 }
   
 .dropdown {
@@ -33,7 +34,7 @@ nav {
     color: inherit;
     background-color: inherit;
     font-family: sans-serif;
-    font-size: large;
+    font-size: 20px;
     padding: 0px;
 }
   
@@ -77,7 +78,7 @@ h1 {
     font-family: sans-serif;
     text-align: center;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 5%;
     width: 100%;
     margin-top: -5%;
@@ -99,9 +100,10 @@ h3 {
     line-height: 170%;
 }
 
-/* 所有正文 */
-/* 所有正文 */
-/* 所有正文 */
+
+/* All contents */
+/* All contents */
+/* All contents */
 
 p {
     font-family: sans-serif;
@@ -120,10 +122,14 @@ p {
     text-align: center;
 }
 
+.heading p {
+    text-align: center;
+}
 
-/* 所有容器 */
-/* 所有容器 */
-/* 所有容器 */
+
+/* All containers */
+/* All containers */
+/* All containers */
 
 /* Header/Blog Title */
 .heading {
@@ -213,7 +219,7 @@ p {
     padding: 40px;
     margin-top: -8%;
     margin-left: 20%;
-    margin-bottom: 15%;
+    margin-bottom: 25%;
 }
 
 #footer {
@@ -243,9 +249,14 @@ p {
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-/* 所有链接 */
-/* 所有链接 */
-/* 所有链接 */
+#search-container {
+    margin-bottom: 30%;
+}
+
+
+/* All links */
+/* All links */
+/* All links */
 
 /* unvisited link */
 a:link {
@@ -302,13 +313,10 @@ a.news-image:hover {
     background-color: white;
 }
 
-#search-container p {
-    text-align: center;
-}
 
-/* 其他设置 */
-/* 其他设置 */
-/* 其他设置 */
+/* Other Settings */
+/* Other Settings */
+/* Other Settings */
 
 iframe {
     width: 120%;
@@ -322,17 +330,15 @@ iframe.kard {
     margin-left: -8%;
 }
 
-/* 设备视图 */
-/* 设备视图 */
-/* 设备视图 */
+/* display settings */
+/* display settings */
+/* display settings */
 
 @media (min-width: 600px) { 
-
 }
 
 @media (min-width: 900px) { 
 }
 
 @media (min-width: 1200px) { 
-
 }
